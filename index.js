@@ -14,7 +14,7 @@ app.use(express.static('client'));
 
 const io = socket(server,{
     cors: {
-        origin: `https://minesweeper2357.herokuapp.com:${PORT}`,
+        origin: `https://minesweeper2357.onrender.com:${PORT}`,
         methods: ["GET", "POST"]
     }
 });
