@@ -7,7 +7,7 @@ if (isNaN(parseFloat(t)))
 t = parseFloat(t)
 let tempo = t*1000;
 
-const socket = new WebSocket('wss://minesweeper2357.herokuapp.com')
+const socket = new WebSocket('wss://minesweeper2357.onrender.com')
 //const socket = new WebSocket('ws://127.0.0.1:3000')
 socket.onopen = ()=>{
   socket.send(JSON.stringify({event:'join', key: key, tempo: tempo}));
